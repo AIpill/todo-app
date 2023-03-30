@@ -11,7 +11,7 @@ function App() {
 
   // Read all todos
   useEffect(() => {
-    axios.get('http://localhost:8000/api/todo')
+    axios.get('https://test-3j9d.onrender.com/api/todo')
       .then(res => {
         setTodoList(res.data)
       })
@@ -19,7 +19,7 @@ function App() {
 
   // Post todo
   const addTodoHandler = () => {
-    axios.post('http://127.0.0.1:8000/api/todo', { 'title':title, 'description':desc })
+    axios.post('https://test-3j9d.onrender.com/api/todo', { 'title':title, 'description':desc })
       .then(res => console.log(res))
       .catch(res => console.log(res))
   }
