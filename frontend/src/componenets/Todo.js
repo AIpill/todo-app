@@ -4,7 +4,7 @@ import React from "react";
 
 function TodoItem(props) {
     const deleteTodoHandler = (title) => {
-    axios.delete(`http://127.0.0.1:8000/api/todo/${title}`)
+    axios.delete(`https://test-3j9d.onrender.com/api/todo/${title}`)
         .then(res => console.log(res.data)) 
         .catch(res => console.log(res))
     }
