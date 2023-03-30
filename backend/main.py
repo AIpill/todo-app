@@ -15,7 +15,7 @@ from database import (
     remove_todo
 )
 
-origins = ['http://localhost:3000']
+origins = ['https://react-test-05br.onrender.com/']
 
 app.add_middleware(
     CORSMiddleware,
